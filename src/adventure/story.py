@@ -35,7 +35,7 @@ def main():
     print("[italic bright_black]You can go [green]left[/green] or [blue]right[/blue].[/italic bright_black]")
 
     while True:
-        print("Which direction do you choose? ([green]left[/green]/[blue]right[/blue]/[red]exit[/red]): ", end="")
+        print("[bold]Which direction do you choose?[/bold] ([green]left[/green]/[blue]right[/blue]/[red]exit[/red]): ", end="")
         choice = input().strip().lower()
         if choice == "exit":
             print("[red]You decide to leave the forest before the darkness reaches you. Farewell, wanderer.[/red]")
