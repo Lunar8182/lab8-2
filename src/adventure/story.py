@@ -5,6 +5,8 @@ from rich import print
 
 default_message = "You stand still, unsure what to do. The forest swallows you."
 
+default_message = "You stand still, unsure what to do. The forest swallows you."
+
 def step(choice: str, events):
     """Decide the story's next step based on the player's choice."""
     random_event = random.choice(events)
@@ -14,7 +16,7 @@ def step(choice: str, events):
     elif choice == "right":
         return right_path(random_event)
     else:
-        return "[dim]You stand still, unsure what to do. The forest swallows you...[/dim]"
+        return default_message
 
 
 def left_path(event: str) -> str:
